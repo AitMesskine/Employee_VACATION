@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html style="min-height: 704px;"><head>
+    <meta charset="UTF-8">
+
+    <title>Employé</title>
+
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <link rel="SHORTCUT ICON" href="https://demo.itest.thinkbuzz.net/uploads/images/site.png">
+
+    <link rel="stylesheet" href="https://demo.itest.thinkbuzz.net/assets/pace/pace.css">
+
+    <script type="text/javascript" src="https://demo.itest.thinkbuzz.net/assets/inilabs/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://demo.itest.thinkbuzz.net/assets/slimScroll/jquery.slimscroll.min.js"></script> -->
+
+    <script type="text/javascript" src="https://demo.itest.thinkbuzz.net/assets/toastr/toastr.min.js"></script>
+
+
+    <link href="https://demo.itest.thinkbuzz.net/assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://demo.itest.thinkbuzz.net/assets/fonts/font-awesome.css" rel="stylesheet">
+
+    <link href="https://demo.itest.thinkbuzz.net/assets/fonts/icomoon.css" rel="stylesheet">
+
+    <link href="https://demo.itest.thinkbuzz.net/assets/fonts/ini-icon.css" rel="stylesheet">
+
+    <link href="https://demo.itest.thinkbuzz.net/assets/datatables/dataTables.bootstrap.css" rel="stylesheet">
+
+    <link id="headStyleCSSLink" href="https://demo.itest.thinkbuzz.net/assets/inilabs/themes/default/style.css" rel="stylesheet">
+
+    <link href="https://demo.itest.thinkbuzz.net/assets/inilabs/hidetable.css" rel="stylesheet">
+
+    <link id="headInilabsCSSLink" href="https://demo.itest.thinkbuzz.net/assets/inilabs/themes/default/inilabs.css" rel="stylesheet">
+
+    <link href="https://demo.itest.thinkbuzz.net/assets/inilabs/responsive.css" rel="stylesheet">
+
+    <link href="https://demo.itest.thinkbuzz.net/assets/toastr/toastr.min.css" rel="stylesheet">
+
+    <link href="https://demo.itest.thinkbuzz.net/assets/inilabs/mailandmedia.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://demo.itest.thinkbuzz.net/assets/datatables/buttons.dataTables.min.css">
+
+    <link rel="stylesheet" href="https://demo.itest.thinkbuzz.net/assets/inilabs/combined.css">
+
+    
+    <script type="text/javascript">
+      $(window).load(function() {
+        $(".se-pre-con").fadeOut("slow");;
+      });
+    </script>
+</head>
+<body class="skin-blue fuelux    pace-done" style="min-height: 704px;"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+<div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+    <div class="se-pre-con" style="display: none;"></div>
+    <!-- header logo: style can be found in header.less -->
+    <header class="header">
+        <a href="https://demo.itest.thinkbuzz.net/dashboard/index" class="logo">
+            <!-- Add the class icon to your logo image or logo icon to add the margining -->
+            Liste des employés            </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+            <!-- Sidebar toggle button-->
+            <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+
+
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown messages-menu my-push-message">
+                        <a href="#" class="dropdown-toggle my-push-message-a" data-toggle="dropdown">
+                            <i class="fa fa-bell-o"></i>
+                        </a>
+                        
+                    </li>
+
+
+                                            <!-- Notifications: style can be found in dropdown.less -->
+                  
+                                <!-- inner menu: contains the actual data -->
+                                
+                                    <li class="language" id="french">
+                                        <a href="https://demo.itest.thinkbuzz.net/language/index/french">
+                                            <div class="pull-left">
+                                                <img src="https://demo.itest.thinkbuzz.net/uploads/language_image/french.png">
+                                            </div>
+                                            <h4>
+                                                French
+                                                                                                </h4>
+                                        </a>
+                                   
+                    </li>
+                                            
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="https://demo.itest.thinkbuzz.net/uploads/images/defualt.png" class="user-logo" alt="">
+                            <span>
+                                Admin                                    <i class="caret"></i>
+                            </span>   
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li class="user-body">
+                                <div class="col-xs-6 text-center">
+                                    <a href="https://demo.itest.thinkbuzz.net/profile/index">
+                                        <div><i class="fa fa-briefcase"></i></div>
+                                        Profile 
+                                    </a>
+                                </div>
+                                <div class="col-xs-6 text-center">
+                                    <a href="https://demo.itest.thinkbuzz.net/signin/cpassword">
+                                        <div><i class="fa fa-lock"></i></div>
+                                        Password 
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="user-footer">
+                                <div class="text-center">
+                                    <a href="https://demo.itest.thinkbuzz.net/signin/signout">
+                                        <div><i class="fa fa-power-off"></i></div>
+                                        Log out 
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>   <div class="wrapper row-offcanvas row-offcanvas-left" style="min-height: 704px;">
+<aside class="left-side sidebar-offcanvas" style="min-height: 704px;">
+    <section class="sidebar">
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img style="display:block" src="https://demo.itest.thinkbuzz.net/uploads/images/defualt.png" class="img-circle" alt="">
+            </div>
+
+            <div class="pull-left info">
+                <p>Admin</p>                   <a href="https://demo.itest.thinkbuzz.net/profile/index">
+                <i class="fa fa-hand-o-right color-green"></i>
+                Admin                </a>
+        </div>
+    </div>
+
+            <ul class="sidebar-menu">
+        <li class=""><a href="https://demo.itest.thinkbuzz.net/dashboard"><i class="fa fa-laptop"></i><span>Dashboard</span> </a></li><li class=""><a href="https://demo.itest.thinkbuzz.net/student"><i class="fa icon-student"></i><span>Student</span> </a></li><li class=""><a href="https://demo.itest.thinkbuzz.net/parents"><i class="fa fa-user"></i><span>Parents</span> </a></li><li class="active"><a href="https://demo.itest.thinkbuzz.net/teacher"><i class="fa icon-teacher"></i><span>Teacher</span> </a></li><li class="treeview "><a href="https://demo.itest.thinkbuzz.net/#"><i class="fa icon-academicmain"></i><span>Academic</span> <i class="fa fa-angle-left pull-right"></i></a><ul class="treeview-menu"><li class=""><a href="https://demo.itest.thinkbuzz.net/classes" style="margin-left: 0px;"><i class="fa fa-sitemap"></i><span>Class</span> </a></li><li class=""><a href="https://demo.itest.thinkbuzz.net/section" style="margin-left: 0px;"><i class="fa fa-star"></i><span>Section</span> </a></li><li class=""><a href="https://demo.itest.thinkbuzz.net/subject" style="margin-left: 0px;"><i class="fa icon-subject"></i><span>Subject</span> </a></li></ul></li><li class=""><a href="https://demo.itest.thinkbuzz.net/conversation"><i class="fa fa-envelope"></i><span>Message</span> </a></li><li class="treeview "><a href="https://demo.itest.thinkbuzz.net/#"><i class="fa fa-graduation-cap"></i><span>Online Exam</span> <i class="fa fa-angle-left pull-right"></i></a><ul class="treeview-menu"><li class=""><a href="https://demo.itest.thinkbuzz.net/question_group" style="margin-left: 0px;"><i class="fa fa-question-circle"></i><span>Question Group</span> </a></li><li class=""><a href="https://demo.itest.thinkbuzz.net/question_level" style="margin-left: 0px;"><i class="fa fa-level-up"></i><span>Question Level</span> </a></li><li class=""><a href="https://demo.itest.thinkbuzz.net/question_bank" style="margin-left: 0px;"><i class="fa fa-qrcode"></i><span>Question Bank</span> </a></li><li class=""><a href="https://demo.itest.thinkbuzz.net/online_exam" style="margin-left: 0px;"><i class="fa fa-slideshare"></i><span>Online Exam</span> </a></li><li class=""><a href="https://demo.itest.thinkbuzz.net/instruction" style="margin-left: 0px;"><i class="fa fa-map-signs"></i><span>Instruction</span> </a></li></ul></li><li class="treeview "><a href="https://demo.itest.thinkbuzz.net/#"><i class="fa icon-noticemain"></i><span>Announcement</span> <i class="fa fa-angle-left pull-right"></i></a><ul class="treeview-menu"><li class=""><a href="https://demo.itest.thinkbuzz.net/notice" style="margin-left: 0px;"><i class="fa fa-calendar"></i><span>Notice</span> </a></li><li class=""><a href="https://demo.itest.thinkbuzz.net/event" style="margin-left: 0px;"><i class="fa fa-calendar-check-o"></i><span>Event</span> </a></li></ul></li><li class="treeview "><a href="https://demo.itest.thinkbuzz.net/#"><i class="fa fa-clipboard"></i><span>Report</span> <i class="fa fa-angle-left pull-right"></i></a><ul class="treeview-menu"><li class=""><a href="https://demo.itest.thinkbuzz.net/idcardreport" style="margin-left: 0px;"><i class="fa iniicon-idcardreport"></i><span>ID Card Report</span> </a></li><li class=""><a href="https://demo.itest.thinkbuzz.net/onlineexamreport" style="margin-left: 0px;"><i class="fa iniicon-onlineexamreport"></i><span>Online Exam Report</span> </a></li><li class=""><a href="https://demo.itest.thinkbuzz.net/onlineexamquestionreport" style="margin-left: 0px;"><i class="fa iniicon-marksheetreport"></i><span>Online Exam Qustion Report</span> </a></li><li class=""><a href="https://demo.itest.thinkbuzz.net/onlineexamquestionanswerreport" style="margin-left: 0px;"><i class="fa iniicon-onlineexamquestionreport"></i><span>Online Exam Question Answer Report</span> </a></li><li class=""><a href="https://demo.itest.thinkbuzz.net/certificatereport" style="margin-left: 0px;"><i class="fa fa-diamond"></i><span>Certificate Report</span> </a></li></ul></li><li class="treeview "><a href="https://demo.itest.thinkbuzz.net/#"><i class="fa icon-administrator"></i><span>Administrator</span> <i class="fa fa-angle-left pull-right"></i></a><ul class="treeview-menu"><li class=""><a href="https://demo.itest.thinkbuzz.net/studentgroup" style="margin-left: 0px;"><i class="fa fa-object-group"></i><span>Student Group</span> </a></li><li class=""><a href="https://demo.itest.thinkbuzz.net/certificate_template" style="margin-left: 0px;"><i class="fa fa-certificate"></i><span>Certificate Template</span> </a></li><li class=""><a href="https://demo.itest.thinkbuzz.net/systemadmin" style="margin-left: 0px;"><i class="fa icon-systemadmin"></i><span>System Admin</span> </a></li><li class=""><a href="https://demo.itest.thinkbuzz.net/resetpassword" style="margin-left: 0px;"><i class="fa icon-reset_password"></i><span>Reset Password</span> </a></li><li class=""><a href="https://demo.itest.thinkbuzz.net/backup" style="margin-left: 0px;"><i class="fa fa-download"></i><span>Backup</span> </a></li><li class=""><a href="https://demo.itest.thinkbuzz.net/permission" style="margin-left: 0px;"><i class="fa icon-permission"></i><span>Permission</span> </a></li><li class=""><a href="https://demo.itest.thinkbuzz.net/addons" style="margin-left: 0px;"><i class="fa fa-crosshairs"></i><span>Addons</span> </a></li><li class=""><a href="https://demo.itest.thinkbuzz.net/update" style="margin-left: 0px;"><i class="fa fa-refresh"></i><span>Update</span> </a></li></ul></li><li class="treeview "><a href="https://demo.itest.thinkbuzz.net/#"><i class="fa fa-gavel"></i><span>Settings</span> <i class="fa fa-angle-left pull-right"></i></a><ul class="treeview-menu"><li class=""><a href="https://demo.itest.thinkbuzz.net/setting" style="margin-left: 0px;"><i class="fa fa-gears"></i><span>General Settings</span> </a></li><li class=""><a href="https://demo.itest.thinkbuzz.net/paymentsettings" style="margin-left: 0px;"><i class="fa icon-paymentsettings"></i><span>Payment Settings</span> </a></li><li class=""><a href="https://demo.itest.thinkbuzz.net/emailsetting" style="margin-left: 0px;"><i class="fa iniicon-ini-emailsetting"></i><span>Email Settings</span> </a></li></ul></li>        </ul>
+</section>
+                                 </td>
+                                                                    <td data-title="Status">
+                                  <div class="onoffswitch-small" id="3">
+                                      <input type="checkbox" id="myonoffswitch3" class="onoffswitch-small-checkbox" name="paypal_demo" checked="checked">
+                                      <label for="myonoffswitch3" class="onoffswitch-small-label">
+                                          <span class="onoffswitch-small-inner"></span>
+                                          <span class="onoffswitch-small-switch"></span>
+                                      </label>
+                                  </div>           
+                                </td>
+                                                                                                        <td data-title="Action">
+                                    <a href="https://demo.itest.thinkbuzz.net/teacher/view/3" class="btn btn-success btn-xs mrg" data-placement="top" data-toggle="tooltip" data-original-title="View"><i class="fa fa-check-square-o"></i></a><a href="https://demo.itest.thinkbuzz.net/teacher/edit/3" class="btn btn-warning btn-xs mrg" data-placement="top" data-toggle="tooltip" data-original-title="Edit"><i class="fa fa-edit"></i></a><a href="https://demo.itest.thinkbuzz.net/teacher/delete/3" onclick="return confirm('you are about to delete a record. This cannot be undone. are you sure?')" class="btn btn-danger btn-xs mrg" data-placement="top" data-toggle="tooltip" data-original-title="Delete"><i class="fa fa-trash-o"></i></a>                                    </td>
+                                                                </tr><tr role="row" class="odd">
+                                <td data-title="#" class="sorting_1">
+                                    5                                    </td>
+                                <td data-title="Photo">
+                                    <img src="https://demo.itest.thinkbuzz.net/uploads/images/defualt.png" width="35px" height="35px" class="img-rounded" alt="">                                    </td>
+                                <td data-title="Name">
+                                    HASSAN                                    </td>
+                                <td data-title="Email">
+                                    shUDEGHB@gmail.com                               </td>
+                                                                    <td data-title="Status">
+                                  <div class="onoffswitch-small" id="5">
+                                      <input type="checkbox" id="myonoffswitch5" class="onoffswitch-small-checkbox" name="paypal_demo" checked="checked">
+                                      <label for="myonoffswitch5" class="onoffswitch-small-label">
+                                          <span class="onoffswitch-small-inner"></span>
+                                          <span class="onoffswitch-small-switch"></span>
+                                      </label>
+                                  </div>           
+                                </td>
+                                                                                                        <td data-title="Action">
+                                    <a href="https://demo.itest.thinkbuzz.net/teacher/view/5" class="btn btn-success btn-xs mrg" data-placement="top" data-toggle="tooltip" data-original-title="View"><i class="fa fa-check-square-o"></i></a><a href="https://demo.itest.thinkbuzz.net/teacher/edit/5" class="btn btn-warning btn-xs mrg" data-placement="top" data-toggle="tooltip" data-original-title="Edit"><i class="fa fa-edit"></i></a><a href="https://demo.itest.thinkbuzz.net/teacher/delete/5" onclick="return confirm('you are about to delete a record. This cannot be undone. are you sure?')" class="btn btn-danger btn-xs mrg" data-placement="top" data-toggle="tooltip" data-original-title="Delete"><i class="fa fa-trash-o"></i></a>                                    </td>
+                                                                </tr></tbody>
+                </table><div class="dataTables_info" id="example1_info" role="status" aria-live="polite">Showing 1 to 5 of 5 entries</div><div class="dataTables_paginate paging_simple_numbers" id="example1_paginate"><ul class="pagination"><li class="paginate_button previous disabled" aria-controls="example1" tabindex="0" id="example1_previous"><a href="#">Previous</a></li><li class="paginate_button active" aria-controls="example1" tabindex="0"><a href="#">1</a></li><li class="paginate_button next disabled" aria-controls="example1" tabindex="0" id="example1_next"><a href="#">Next</a></li></ul></div></div>
+            </div>
+
+        </div> <!-- col-sm-12 -->
+    </div><!-- row -->
+</div><!-- Body -->
+</div><!-- /.box -->
+
+<script>
+var status = '';
+var id = 0;
+$('.onoffswitch-small-checkbox').click(function() {
+  if($(this).prop('checked')) {
+      status = 'chacked';
+      id = $(this).parent().attr("id");
+  } else {
+      status = 'unchacked';
+      id = $(this).parent().attr("id");
+  }
+
+  if((status != '' || status != null) && (id !='')) {
+      $.ajax({
+          type: 'POST',
+          url: "https://demo.itest.thinkbuzz.net/teacher/active",
+          data: "id=" + id + "&status=" + status,
+          dataType: "html",
+          success: function(data) {
+              if(data == 'Success') {
+                  toastr["success"]("Success")
+                  toastr.options = {
+                    "closeButton": true,
+                    "debug": false,
+                    "newestOnTop": false,
+                    "progressBar": false,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "500",
+                    "hideDuration": "500",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                  }
+              } else {
+                  toastr["error"]("Error")
+                  toastr.options = {
+                    "closeButton": true,
+                    "debug": false,
+                    "newestOnTop": false,
+                    "progressBar": false,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "500",
+                    "hideDuration": "500",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                  }
+              }
+          }
+      });
+  }
+}); 
+</script>                    </div>
+            </div>
+        </section>
+    </aside>
+
+    <footer class="main-footer">
+          <div class="pull-right hidden-xs">
+            <b>v</b> 3.4          	</div>
+          <strong>Copyright © iTest</strong>
+    </footer>
+    </div><!-- ./wrapper -->
+
+    <script type="text/javascript" src="https://demo.itest.thinkbuzz.net/assets/bootstrap/bootstrap.min.js"></script>
+    <!-- Style js -->
+    <script type="text/javascript" src="https://demo.itest.thinkbuzz.net/assets/inilabs/style.js"></script>
+
+    <!-- Jquery datatable tools js -->
+    <script type="text/javascript" src="https://demo.itest.thinkbuzz.net/assets/datatables/tools/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://demo.itest.thinkbuzz.net/assets/datatables/tools/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="https://demo.itest.thinkbuzz.net/assets/datatables/tools/jszip.min.js"></script>
+    <script type="text/javascript" src="https://demo.itest.thinkbuzz.net/assets/datatables/tools/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://demo.itest.thinkbuzz.net/assets/datatables/tools/vfs_fonts.js"></script>
+    <script type="text/javascript" src="https://demo.itest.thinkbuzz.net/assets/datatables/tools/buttons.html5.min.js"></script>
+    <!-- dataTables Tools / -->
+    <script type="text/javascript" src="https://demo.itest.thinkbuzz.net/assets/datatables/dataTables.bootstrap.js"></script>
+
+    <script type="text/javascript" src="https://demo.itest.thinkbuzz.net/assets/inilabs/inilabs.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#example3, #example1, #example2').DataTable( {
+                dom: 'Bfrtip',
+                buttons: [
+                    'copyHtml5',
+                    'excelHtml5',
+                    'csvHtml5',
+                    'pdfHtml5'
+                ],
+                search: false
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#withoutBtn").dataTable();
+        });
+    </script>
+
+            
+    
+    <script type="text/javascript">
+        $("ul.sidebar-menu li").each(function(index, value) {
+            if($(this).attr('class') == 'active') {
+                $(this).parents('li').addClass('active');
+            }
+        });
+
+        $(document).ready(function () {
+            setTimeout(function () {
+                $.ajax({
+                    type : 'GET',
+                    dataType : "html",
+                    url : "https://demo.itest.thinkbuzz.net/alert/alert",
+                    success : function (data) {
+                        $(".my-push-message-list").html(data);
+                        var alertNumber = 0;
+                        $('.my-push-message-list li').each(function () {
+                            alertNumber++;
+                        });
+                        if (alertNumber > 0) {
+                            $('.my-push-message-ul').removeAttr('style');
+                            $('.my-push-message-a').append('<span class="label label-danger"><lable class="alert-image">' + alertNumber + '</lable> </span>');
+                            $('.my-push-message-number').html('You have ' + alertNumber + ' notifications');
+                        } else {
+                            $('.my-push-message-ul').remove();
+                        }
+                    }
+                });
+            }, 10000);
+      });
+  </script>
+
+
+
+
+</body></html>
+
+<legend class="legend"> <i class="bi bi-person-fill"></i> Votre informations personnelles : </legend>

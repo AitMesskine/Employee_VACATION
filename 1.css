@@ -1,0 +1,53 @@
+.logo{
+background-color: rgb(133, 236, 168);
+align-items: center;
+align-self:center;
+text-align: justify;
+color: rgb(0, 0, 0);
+}
+#tde{
+text-align: right;
+padding-left: 400px;
+
+
+}
+.titre{
+background-color: rgb(234, 241, 234);
+padding: 10px 10px 10px 450px;
+color: rgb(41, 41, 43);
+}
+.main{
+
+padding: 10px 10px 10px 10px ;
+}
+
+.legend{
+color: rgb(235, 140, 159);
+font-weight: 100;
+
+}
+.cadre{
+
+
+}
+.p{
+text-align: center;
+}
+.nav{
+top: 100px;
+left: 10%;
+right: 500px;
+}
+#box {
+    box-sizing: content-box;
+  }
+.span{
+color: rgb(250, 2, 2);
+font-weight: 200px;
+
+
+}
+.aa{
+color: blanchedalmond;
+
+}

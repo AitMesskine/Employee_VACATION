@@ -1,0 +1,29 @@
+.footer{
+text-align: center;
+
+padding: 150px 500px;
+
+
+}
+.div{
+    pagination-padding-y:              .375rem;
+    $pagination-padding-x:              .75rem;
+    $pagination-padding-y-sm:           .25rem;
+    $pagination-padding-x-sm:           .5rem;
+    $pagination-padding-y-lg:           .75rem;
+    $pagination-padding-x-lg:           1.5rem;
+
+
+
+}
+.span{
+font-weight: 500px;
+color: rgb(106, 106, 218);
+
+}
+.aa{
+color: floralwhite;
+
+
+
+}
